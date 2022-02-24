@@ -30,6 +30,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
+    // https://github.com/nuxt-community/google-fonts-module
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -37,6 +39,20 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+
+  googleFonts: {
+    display: 'fallback',
+    prefetch: true,
+    preload: true,
+    families: {
+      Roboto: true,
+      Lato: [100, 300, 400, 500, 700],
+      Raleway: {
+        wght: [100, 400, 700],
+      },
+      'Material+Icons': true,
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

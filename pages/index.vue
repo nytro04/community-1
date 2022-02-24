@@ -1,5 +1,7 @@
 <template>
-  <div class="text-green-500 text-3xl">hello</div>
+  <div class="text-green-500 text-3xl">
+    hello <span class="material-icons"> search </span>
+  </div>
 </template>
 
 <script>
