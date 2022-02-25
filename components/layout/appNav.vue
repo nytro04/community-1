@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="grid grid-cols-1 py-8 border-t border-white border-opacity-30 md:grid-cols-3"
+    class="grid grid-cols-1 py-8 border-t border-white gap-x-10 border-opacity-30 md:grid-cols-3"
   >
     <ul class="flex w-full col-span-2 space-x-10">
       <li

@@ -1,10 +1,11 @@
 <template>
-  <div class="text-green-500 text-3xl p-5">
-    hello <span class="material-icons"> search </span>
+  <div class="">
+    <Dashboard />
   </div>
 </template>
 
 <script>
+import Dashboard from '~/components/dashboard/Dashboard.vue'
 export default {
   name: 'IndexPage',
   head() {
@@ -12,5 +13,6 @@ export default {
       title: 'Home Page',
     }
   },
+  components: { Dashboard },
 }
 </script>
