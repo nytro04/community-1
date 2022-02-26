@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-1 gap-x-10 md:grid-cols-3 h-[70vh] mb-8">
+  <div
+    class="grid grid-cols-1 gap-x-10 lg:gap-y-0 gap-y-10 md:grid-cols-3 h-[70vh] mb-8"
+  >
     <DashboardLeft />
     <DashboardRight />
   </div>

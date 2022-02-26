@@ -1,8 +1,8 @@
 <template>
   <nav
-    class="grid grid-cols-1 py-6 border-t border-white gap-x-10 border-opacity-30 md:grid-cols-3"
+    class="hidden grid-cols-1 py-6 border-t border-white lg:grid lg:space-x-10 border-opacity-30 md:grid-cols-3"
   >
-    <ul class="flex items-center w-full col-span-2 space-x-10">
+    <ul class="lg:flex lg:items-center lg:w-full lg:space-x-10 lg:col-span-2">
       <li
         v-for="nav in navs"
         :key="nav.name"
@@ -11,7 +11,7 @@
         <nuxt-link :to="nav.url">{{ nav.name }}</nuxt-link>
       </li>
     </ul>
-    <div class="relative col-span-1">
+    <div class="relative lg:col-span-1">
       <span class="absolute text-gray-300 material-icons left-3 top-[10px]">
         search
       </span>
@@ -27,14 +27,14 @@
 
 <script>
 export default {
+  props: {
+    navs: {
+      type: Array,
+      default: () => [],
+    },
+  },
   data: () => ({
-    navs: [
-      { name: 'Home', url: '/home' },
-      { name: 'Profile', url: '/profile' },
-      { name: 'Resources', url: '/resources' },
-      { name: 'Company Directory', url: '/company-directory' },
-      { name: 'Openings', url: '/openings' },
-    ],
+    search: '',
   }),
 }
 </script>
