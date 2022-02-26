@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="min-h-screen">
     <Dashboard />
   </div>
 </template>

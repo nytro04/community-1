@@ -1,8 +1,8 @@
 <template>
   <nav
-    class="grid grid-cols-1 py-8 border-t border-white gap-x-10 border-opacity-30 md:grid-cols-3"
+    class="grid grid-cols-1 py-6 border-t border-white gap-x-10 border-opacity-30 md:grid-cols-3"
   >
-    <ul class="flex w-full col-span-2 space-x-10">
+    <ul class="flex items-center w-full col-span-2 space-x-10">
       <li
         v-for="nav in navs"
         :key="nav.name"
@@ -19,7 +19,7 @@
         type="text"
         v-model="search"
         placeholder="Search"
-        class="w-full pl-10 text-lg text-gray-300 bg-indigo-400 border-none rounded-md placeholder:text-gray-300"
+        class="w-full pl-10 text-lg text-gray-300 bg-indigo-500 border-none rounded-md placeholder:text-gray-300"
       />
     </div>
   </nav>

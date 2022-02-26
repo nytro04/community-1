@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-indigo-600">
+  <div class="bg-indigo-600 h-[35vh]">
     <div class="px-8 py-5">
       <AppHeader />
       <AppNav />
